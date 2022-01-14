@@ -63,6 +63,9 @@ rstudio-start:
 rstudio-stop:
 	docker-compose down
 
+say-hello:
+	echo "Hi!"
+
 .PHONY: fetch-rawdata
 .PHONY: analysis workflow-test 
 .PHONY: gh-pages gh-pages-origin
@@ -70,3 +73,4 @@ rstudio-stop:
 .PHONY: rocker-distill 
 .PHONY: website clean-website 
 .PHONY: rstudio-start rstudio-stop
+.PHONY: say-hello
